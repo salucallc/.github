@@ -1,0 +1,1 @@
+This file exists only to prove that the propose_pr tool worked end-to-end on 2026-04-22 after the REST-API fix.
