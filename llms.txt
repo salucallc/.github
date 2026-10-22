@@ -1,0 +1,25 @@
+# salucallc/.github
+
+> Organization-wide community health defaults for salucallc GitHub repos: security policy, contributing guide, code of conduct, issue and pull request templates, and the organization profile. MIT licence.
+
+GitHub shows these files in any salucallc repo that has no file of the same type; a repo's own file always wins. They do not apply to saluca-labs repos. There is no code, no CODEOWNERS and no workflows here; reusable CI lives in salucallc/ci-shared.
+
+## Docs
+
+- [README](https://github.com/salucallc/.github/blob/main/README.md): what is provided and how GitHub applies it
+- [SECURITY.md](https://github.com/salucallc/.github/blob/main/SECURITY.md): how to report a vulnerability (security@saluca.com), scope, safe harbour
+- [CONTRIBUTING.md](https://github.com/salucallc/.github/blob/main/CONTRIBUTING.md): how to propose a change
+- [CODE_OF_CONDUCT.md](https://github.com/salucallc/.github/blob/main/CODE_OF_CONDUCT.md): conduct standards and where to report (conduct@saluca.com)
+
+## Templates
+
+- [Bug report](https://github.com/salucallc/.github/blob/main/.github/ISSUE_TEMPLATE/bug_report.md): default bug issue template
+- [Feature request](https://github.com/salucallc/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.md): default feature issue template
+- [Pull request template](https://github.com/salucallc/.github/blob/main/.github/pull_request_template.md): default PR description
+
+## Optional
+
+- [Organization profile](https://github.com/salucallc/.github/blob/main/profile/README.md): the text on github.com/salucallc
+- [salucallc/ci-shared](https://github.com/salucallc/ci-shared): reusable GitHub Actions workflows
+- [AGENTS.md](https://github.com/salucallc/.github/blob/main/AGENTS.md): rules for agents editing this repo
+- [llms-full.txt](https://github.com/salucallc/.github/blob/main/llms-full.txt): this header plus every file above in full

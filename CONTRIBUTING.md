@@ -2,10 +2,12 @@
 
 Most Saluca products are dual-licensed: a Noncommercial / research tier under PolyForm Noncommercial 1.0.0, and a commercial SKU. Contributions to any Saluca repo are accepted under the same licensing terms as the repo itself.
 
+> Correction, 2026-10-22: the first sentence above does not match the public repos. Of the public repos in the `salucallc` and `saluca-labs` organizations checked on 2026-10-22, none carries a PolyForm licence: the product repos checked (tiresias-core, tartarus-mcp, elysium, hephaestus) use the Functional Source License 1.1 with an Apache 2.0 future licence, and the research repos mostly use Apache-2.0 or MIT. Each repo's `LICENSE` file is the authority.
+
 ## Before you open a PR
 
 1. Check the repo's `README.md` for project-specific contribution notes.
-2. Open an issue first for anything larger than a bug fix or a typo — a short design alignment is cheaper than a big PR that gets redirected.
+2. Open an issue first for anything larger than a bug fix or a typo... a short design alignment is cheaper than a big PR that gets redirected.
 3. Sign commits if the repo requires it (most product repos do; see the repo settings).
 
 ## Scope discipline

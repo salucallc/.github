@@ -1,6 +1,6 @@
 # Code of Conduct
 
-All participants in Saluca LLC projects — contributors, maintainers, issue reporters, commenters — are expected to engage professionally and respectfully.
+All participants in Saluca LLC projects, contributors, maintainers, issue reporters and commenters, are expected to engage professionally and respectfully.
 
 ## Standards
 
@@ -15,4 +15,4 @@ Report violations to **conduct@saluca.com**. Maintainers will review and respond
 
 ## Scope
 
-This code applies in all project spaces — repos, issue trackers, pull requests, discussions, chat channels, and in-person events where Saluca LLC is represented.
+This code applies in all project spaces, including repos, issue trackers, pull requests, discussions, chat channels, and in-person events where Saluca LLC is represented.
