@@ -4,19 +4,23 @@
 
 GitHub shows these files in any salucallc repo that has no file of the same type; a repo's own file always wins. They do not apply to saluca-labs repos. There is no code, no CODEOWNERS and no workflows here; reusable CI lives in salucallc/ci-shared.
 
+If a file is not listed here, this repo does not provide it, and GitHub falls back to nothing. The complete surface is the six files below plus the organization profile.
+
+The full text of this repository's prose docs, concatenated, each under its path. Regenerate this file whenever one of them changes.
+
 ## README.md
 
-# salucallc/.github
+### salucallc/.github
 
 Organization-wide community health defaults for [salucallc](https://github.com/salucallc) repositories.
 
 GitHub automatically applies the contents of this repository as default templates for any salucallc repo that does not override them locally. Repo-local files always win.
 
-## Status
+#### Status
 
 Maintained. Today it provides the files listed under Usage. It covers the `salucallc` organization only: GitHub applies an org's `.github` repo to that org's repos, so `saluca-labs` repos do not inherit these files.
 
-### Corrections, 2026-10-22
+##### Corrections, 2026-10-22
 
 This README described several things this repo does not contain or do:
 
@@ -26,17 +30,17 @@ This README described several things this repo does not contain or do:
 - It listed default workflows in `.github/workflows/`. There is no workflows directory. GitHub does not run workflows from this repo in other repos; reusable workflows live in [`salucallc/ci-shared`](https://github.com/salucallc/ci-shared).
 - Under Maintenance it said direct pushes to `main` are disabled and that Dependabot bumps action pins weekly. On 2026-10-22 `main` had no branch protection or ruleset, and there is no Dependabot configuration in this repo (it has no workflows to bump).
 
-## Install
+#### Install
 
 Nothing to install. GitHub reads these files from this repository; consuming repos do nothing.
 
-## Quickstart
+#### Quickstart
 
 Open the security policy of a salucallc repo that has no `SECURITY.md` of its own, for example
 <https://github.com/salucallc/ci-shared/security/policy>. GitHub shows this repo's [SECURITY.md](SECURITY.md)
 there, with the `security@saluca.com` reporting address.
 
-## Usage
+#### Usage
 
 What this repo provides:
 
@@ -52,24 +56,24 @@ What this repo provides:
 
 A repo overrides any of these by adding its own file of the same name. For CI, a repo adds a thin workflow at `.github/workflows/ci.yml` that calls the reusable workflows in [`salucallc/ci-shared`](https://github.com/salucallc/ci-shared); see its README for the call surface and pinning guidance.
 
-## Architecture
+#### Architecture
 
 There is no code. GitHub looks for each community health file in the repo itself first, then in this repo (at the root or in `.github/`). This repo must stay public for that to work. `LICENSE` and `README.md` here describe this repo only and are not inherited.
 
-## Maintenance
+#### Maintenance
 
 - Changes land via PR to `main`.
 - A change here changes every salucallc repo that does not override the file, so keep the files general and free of internal details.
 
-## Citation
+#### Citation
 
 No archived record yet.
 
-## License
+#### License
 
 MIT. See [LICENSE](LICENSE). Templates are intentionally liberal so forks and external contributors can reuse them.
 
-## Links
+#### Links
 
 - [salucallc/ci-shared](https://github.com/salucallc/ci-shared): reusable GitHub Actions workflows
 - [GitHub docs: default community health files](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)
@@ -78,9 +82,9 @@ _Last updated: 2026-10-22_
 
 ## SECURITY.md
 
-# Security Policy
+### Security Policy
 
-## Reporting a vulnerability
+#### Reporting a vulnerability
 
 If you discover a security vulnerability in any Saluca LLC product, **do not open a public issue**. Email **security@saluca.com** with:
 
@@ -91,7 +95,7 @@ If you discover a security vulnerability in any Saluca LLC product, **do not ope
 
 We aim to acknowledge reports within **2 business days** and produce a fix or mitigation timeline within **10 business days** for confirmed issues.
 
-## Scope
+#### Scope
 
 In scope for coordinated disclosure:
 - Anything published under the `salucallc` or `saluca-labs` GitHub organizations.
@@ -101,62 +105,62 @@ Out of scope:
 - Rate-limiting issues on public endpoints (report as a regular issue).
 - Vulnerabilities in third-party dependencies that have not been verified as exploitable in our deployment.
 
-## Safe-harbor
+#### Safe-harbor
 
 Security researchers acting in good faith under this policy will not be subject to legal action from Saluca LLC for the research described above.
 
 ## CONTRIBUTING.md
 
-# Contributing to Saluca LLC projects
+### Contributing to Saluca LLC projects
 
 Most Saluca products are dual-licensed: a Noncommercial / research tier under PolyForm Noncommercial 1.0.0, and a commercial SKU. Contributions to any Saluca repo are accepted under the same licensing terms as the repo itself.
 
 > Correction, 2026-10-22: the first sentence above does not match the public repos. Of the public repos in the `salucallc` and `saluca-labs` organizations checked on 2026-10-22, none carries a PolyForm licence: the product repos checked (tiresias-core, tartarus-mcp, elysium, hephaestus) use the Functional Source License 1.1 with an Apache 2.0 future licence, and the research repos mostly use Apache-2.0 or MIT. Each repo's `LICENSE` file is the authority.
 
-## Before you open a PR
+#### Before you open a PR
 
 1. Check the repo's `README.md` for project-specific contribution notes.
 2. Open an issue first for anything larger than a bug fix or a typo... a short design alignment is cheaper than a big PR that gets redirected.
 3. Sign commits if the repo requires it (most product repos do; see the repo settings).
 
-## Scope discipline
+#### Scope discipline
 
 - One change per PR. Separate refactors, fixes, and features.
 - No backwards-compatibility shims unless specifically asked.
 - No speculative abstractions. Three similar lines beats a premature framework.
 - Add tests for behavior changes.
 
-## Style
+#### Style
 
 - Match the surrounding code. Run any linter or formatter the repo ships.
 - Commit messages concrete: what changed and why.
 
-## License + CLA
+#### License + CLA
 
 By submitting a contribution, you agree that the work may be licensed under the repo's declared license, and that you have the rights to license it that way. No separate CLA is required for most repos; some product repos may require one and will surface that on the PR.
 
-## Security
+#### Security
 
 See `SECURITY.md`. Do not open public issues for security findings.
 
 ## CODE_OF_CONDUCT.md
 
-# Code of Conduct
+### Code of Conduct
 
 All participants in Saluca LLC projects, contributors, maintainers, issue reporters and commenters, are expected to engage professionally and respectfully.
 
-## Standards
+#### Standards
 
 - Be direct and technical; criticism of code, design, or ideas is welcome.
 - Personal attacks, harassment, and discriminatory conduct are not.
 - Assume good faith; clarify before escalating.
 - Confidential information (customer data, internal credentials, unpublished security findings) does not belong in public issues or PRs.
 
-## Enforcement
+#### Enforcement
 
 Report violations to **conduct@saluca.com**. Maintainers will review and respond privately. Outcomes may include private correction, temporary or permanent removal from the project, or referral to legal counsel for harassment that crosses statutory lines.
 
-## Scope
+#### Scope
 
 This code applies in all project spaces, including repos, issue trackers, pull requests, discussions, chat channels, and in-person events where Saluca LLC is represented.
 
@@ -169,27 +173,27 @@ title: "[BUG] "
 labels: bug
 ---
 
-## What happened
+#### What happened
 
 <!-- Concrete description, one paragraph. -->
 
-## Expected
+#### Expected
 
 <!-- What should have happened. -->
 
-## Reproduction
+#### Reproduction
 
 1. ...
 2. ...
 3. ...
 
-## Environment
+#### Environment
 
 - Product + version:
 - OS:
 - Relevant config:
 
-## Logs / screenshots
+#### Logs / screenshots
 
 <!-- Paste relevant output. Redact secrets before submitting. -->
 
@@ -202,19 +206,19 @@ title: "[FEATURE] "
 labels: enhancement
 ---
 
-## Problem
+#### Problem
 
 <!-- What can't you do today that you need to? -->
 
-## Proposed solution
+#### Proposed solution
 
 <!-- One option, briefly. Multiple options if you have them. -->
 
-## Alternatives considered
+#### Alternatives considered
 
 <!-- Anything you ruled out and why. -->
 
-## Additional context
+#### Additional context
 
 <!-- Screenshots, related tickets, downstream customers affected, etc. -->
 
@@ -222,41 +226,95 @@ labels: enhancement
 
 <!-- Scope this PR to one change. Separate refactors, fixes, and features. -->
 
-## Summary
+#### Summary
 
 <!-- One to three sentences. What changed and why. -->
 
-## Motivation
+#### Motivation
 
 <!-- Link relevant issues, Linear tickets, or discussions. -->
 
-## Approach
+#### Approach
 
 <!-- High-level description of the implementation. -->
 
-## Verification
+#### Verification
 
 - [ ] Existing tests pass
 - [ ] New tests added (if behavior changed)
 - [ ] Manually verified (describe)
 
-## Risk
+#### Risk
 
 <!-- Blast radius + reversibility. What breaks if this is wrong? -->
 
 ## profile/README.md
 
-# Saluca LLC
+### Saluca LLC
 
 Sovereign AI infrastructure. Cryptographically-verified agent memory, post-quantum ready, deployable on-prem.
 
-### Products
+##### Products
 - **Tiresias**, MSSP platform for always-on AI agent governance.
 - **Mission Control** (**Saluca Micro-Lab** externally), headless COO appliance bundling persistent agent runtime with soul-svc, MCP, Tiresias, and Asphodel.
 - **Asphodel**, quantum-resistant agent memory database.
 
-### Licensing
+##### Licensing
 Most Saluca products dual-license: **PolyForm Noncommercial 1.0.0** for research and personal use, with a commercial SKU via Stripe. See individual repos.
 
-### Contact
+##### Contact
 cristian@saluca.com
+
+## AGENTS.md
+
+### AGENTS.md
+
+Instructions for AI coding agents working in this repository.
+
+#### What this is
+
+The default community health files (security policy, contributing guide, code of conduct, issue and PR
+templates) and the organization profile for every salucallc repo that has no file of its own. No code.
+
+#### Read in this order
+
+1. `README.md`: the Usage table lists every file and what GitHub uses it as.
+2. The file you are changing.
+3. `profile/README.md` only if the change is to the organization page.
+
+#### What you can and cannot see
+
+- You can see the defaults. You cannot see which repos override them from here. To check what one
+  repo actually shows, run `gh api repos/salucallc/<repo>/community/profile`: a file URL under
+  `salucallc/.github` means that repo inherits it from here.
+- saluca-labs repos do not inherit anything from this repo.
+
+#### Setup
+
+Nothing to install. The repo is Markdown files that GitHub reads as defaults for every salucallc repo.
+
+#### Test
+
+There is no test suite. Before a PR, check that every link in README.md and llms.txt resolves and that
+`llms-full.txt` matches the docs.
+
+#### Conventions
+
+- Every file here is shown in every salucallc repo that lacks its own copy. Keep the text general:
+  no repo-specific instructions, internal tool names, hostnames, internal paths or personal addresses.
+- Contact addresses are role addresses (`security@saluca.com`, `conduct@saluca.com`).
+- When any doc changes, regenerate `llms-full.txt` in the same PR: the `llms.txt` header, then each file
+  under a `## <path>` heading in the order README.md, SECURITY.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md,
+  .github/ISSUE_TEMPLATE/bug_report.md, .github/ISSUE_TEMPLATE/feature_request.md,
+  .github/pull_request_template.md, profile/README.md, AGENTS.md.
+- No em-dashes.
+
+#### Do not
+
+- Describe files that do not exist here (CODEOWNERS and workflows are not inherited from this repo).
+- Make this repo private: GitHub only applies defaults from a public `.github` repo.
+- Commit secrets, hostnames, internal paths or personal emails.
+
+#### Done means
+
+Links resolve, README.md describes exactly the files present, and `llms-full.txt` is regenerated.

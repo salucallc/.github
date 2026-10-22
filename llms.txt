@@ -4,9 +4,14 @@
 
 GitHub shows these files in any salucallc repo that has no file of the same type; a repo's own file always wins. They do not apply to saluca-labs repos. There is no code, no CODEOWNERS and no workflows here; reusable CI lives in salucallc/ci-shared.
 
-## Docs
+If a file is not listed here, this repo does not provide it, and GitHub falls back to nothing. The complete surface is the six files below plus the organization profile.
 
-- [README](https://github.com/salucallc/.github/blob/main/README.md): what is provided and how GitHub applies it
+## Start here
+
+- [README](https://github.com/salucallc/.github/blob/main/README.md): every file provided, what GitHub uses it as, and how a repo overrides it
+
+## Report or contribute to a salucallc repo
+
 - [SECURITY.md](https://github.com/salucallc/.github/blob/main/SECURITY.md): how to report a vulnerability (security@saluca.com), scope, safe harbour
 - [CONTRIBUTING.md](https://github.com/salucallc/.github/blob/main/CONTRIBUTING.md): how to propose a change
 - [CODE_OF_CONDUCT.md](https://github.com/salucallc/.github/blob/main/CODE_OF_CONDUCT.md): conduct standards and where to report (conduct@saluca.com)
@@ -17,9 +22,12 @@ GitHub shows these files in any salucallc repo that has no file of the same type
 - [Feature request](https://github.com/salucallc/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.md): default feature issue template
 - [Pull request template](https://github.com/salucallc/.github/blob/main/.github/pull_request_template.md): default PR description
 
+## Change this repo
+
+- [AGENTS.md](https://github.com/salucallc/.github/blob/main/AGENTS.md): orientation, how to check what a repo inherits, rules for edits
+
 ## Optional
 
 - [Organization profile](https://github.com/salucallc/.github/blob/main/profile/README.md): the text on github.com/salucallc
 - [salucallc/ci-shared](https://github.com/salucallc/ci-shared): reusable GitHub Actions workflows
-- [AGENTS.md](https://github.com/salucallc/.github/blob/main/AGENTS.md): rules for agents editing this repo
 - [llms-full.txt](https://github.com/salucallc/.github/blob/main/llms-full.txt): this header plus every file above in full
